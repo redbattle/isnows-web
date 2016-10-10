@@ -4,3 +4,73 @@
 @import 'parts/shadows';
 
 @import "parts/example-pages";
+
+/* ========================================================================
+   Component: Side Text (pic-text)
+ ========================================================================== */
+.pic-text {
+  padding: 30px 0;
+  .mockup-mobile{
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+/* ========================================================================
+   Component: featured-list
+ ========================================================================== */
+.featured-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 40px 0;
+  text-align: left;
+  >li{
+    margin-bottom: 26px;
+    color: #23b7e5;
+    >p{
+      display: inline-block;
+      margin: 0;
+      color: #515253;
+    }
+    em + em{
+      font-size: 18px;
+    }
+  }
+}
+/* ========================================================================
+   Component: Versions
+ ========================================================================== */
+.versions {
+  padding: 30px 0;
+  background: #fff;
+}
+.version-pic {
+  margin: 0 auto;
+  max-width: 150px;
+}
+.bottom-space {
+  margin-bottom: 80px;
+}
+.media-card {
+  border: 1px solid #e4eaec;
+  padding: 14px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.media-card .media-card-text {
+  font-size: 13px;
+}
+
+
+@media (max-width: 768px){
+  .pic-text-left {
+    text-align: left;
+  }
+  .pic-text-right {
+    text-align: right;
+  }
+}
