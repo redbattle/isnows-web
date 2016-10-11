@@ -8,7 +8,7 @@
   var scrollAnimationTime = 1000,
       scrollAnimationFunc = 'easeInOutExpo',
       transparent = true,
-      $root               = $('html, body'),
+      $root = $('html, body'),
       $body = $('body');
   $(function(){
     $.material.init();
@@ -38,7 +38,7 @@
       navbar_menu_visible: 0
     },
     checkScrollForTransparentNavbar: debounce(function() {
-      if($(document).scrollTop() > 260 ) {
+      if($(document).scrollTop() > 90 ) {
         if(transparent) {
           transparent = false;
           $('.navbar-color-on-scroll').removeClass('navbar-transparent');

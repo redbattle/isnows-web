@@ -118,7 +118,7 @@
 }
 
 @mixin shadow-big-navbar(){
-    box-shadow: 0 2px 4px 0 rgba(57, 57, 57, $mdb-shadow-key-penumbra-opacity * 3)
+    box-shadow: 0 2px 8px -4px rgba(57, 57, 57, $mdb-shadow-key-penumbra-opacity * 3)
 }
 
 @mixin shadow-big-color($color){
