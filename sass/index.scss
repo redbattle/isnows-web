@@ -26,10 +26,9 @@
 .featured-list {
   list-style-type: none;
   padding-left: 0;
-  margin: 40px 0;
   text-align: left;
   >li{
-    margin-bottom: 26px;
+    margin-bottom: 10px;
     color: #23b7e5;
     >p{
       display: inline-block;
@@ -46,7 +45,6 @@
  ========================================================================== */
 .versions {
   padding: 30px 0;
-  background: #fff;
 }
 .version-pic {
   margin: 0 auto;
@@ -60,6 +58,7 @@
   padding: 14px;
   border-radius: 4px;
   margin-bottom: 30px;
+  background: #ffffff;
 }
 .media-card .media-card-text {
   font-size: 13px;

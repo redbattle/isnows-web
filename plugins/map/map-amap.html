@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+     <style type="text/css">
+      body,html,#container{
+        height: 100%;
+        margin: 0;
+        font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+      }
+      .info-title{
+        color: white;
+        font-size: 14px;
+        background-color: rgba(0,155,255,0.8);
+        line-height: 26px;
+        padding: 0 0 0 6px;
+        font-weight: lighter;
+        letter-spacing: 1px
+      }
+      .info-content{
+        padding: 4px;
+        color: #666666;
+        line-height: 23px;
+      }
+      .info-content img{
+        float: left;
+        margin: 3px;
+      }
+    </style>
+    <title>快速入门</title>
+  </head>
+  <body>
+   <div id="container" tabindex="0"></div>
+   <div id='panel'></div>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=608d75903d29ad471362f8c58c550daf"></script>
+   <script type="text/javascript">
+    var map = new AMap.Map('container',{
+            resizeEnable: true,
+            zoom: 15,
+            center: [114.319666,30.426]
+    });
+    var marker = new AMap.Marker({
+            position: [114.319666,30.424680]
+    });
+    marker.setMap(map);
+    marker.on('click',function(e){
+      infowindow.open(map,e.target.getPosition());
+    });
+    AMap.plugin('AMap.AdvancedInfoWindow',function(){
+       infowindow = new AMap.AdvancedInfoWindow({
+        content: '<div class="info-title">武汉雪景科技有限公司</div><div class="info-content">'+
+                '武汉雪景科技有限公司'+
+                '</div>',
+        offset: new AMap.Pixel(0, -30)
+      });
+      infowindow.open(map,[114.319666,30.424680]);
+    });
+
+    AMap.plugin(['AMap.ToolBar'],
+        function(){
+            map.addControl(new AMap.ToolBar());
+
+    });
+
+
+   </script>
+   <script type="text/javascript" src="http://webapi.amap.com/demos/js/liteToolbar.js"></script>
+  </body>
+</html>
