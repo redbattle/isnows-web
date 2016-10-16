@@ -29,14 +29,19 @@
   text-align: left;
   >li{
     margin-bottom: 10px;
-    color: #23b7e5;
+    padding: 4px 0;
+    color: $light-blue-400;
     >p{
       display: inline-block;
       margin: 0;
-      color: #515253;
+      color: $grey-700;
     }
     em + em{
       font-size: 18px;
+    }
+    >a{
+      width: 86%;
+      display: inline-block;
     }
   }
 }
