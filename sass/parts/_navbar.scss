@@ -7,20 +7,40 @@
   @include shadow-big-navbar();
 
   @extend .animation-transition-fast;
-  $nav-text-color: $blue-grey-500;
+  $nav-text-color: $black-color;
   padding: 6px 0;
 
   .navbar-brand {
     position: relative;
-    height: 50px;
-    line-height: 30px;
     color: $nav-text-color;
-    padding: 10px 15px;
+    padding: 12px 15px;
     font-size: 20px;
     &:hover,
     &:focus {
       color: $nav-text-color;
       background-color: transparent;
+    }
+    .logo,.logo-brand{
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+      float: left;
+    }
+    .logo{
+      overflow: hidden;
+      margin-top: 2px;
+      width: 50px;
+      height: 26px;
+      background: url("../img/logo-black50.png") center no-repeat ;
+    }
+    .logo-brand{
+      font-size: 16px;
+      line-height: 18px;
+      margin-left: 10px;
+      margin-top: 7px;
+      width: 70px;
+      text-align: left;
     }
   }
 
@@ -248,7 +268,10 @@
       padding-top: 20px;
 
       .logo-container .brand{
-          color: $white-color;
+        color: $white-color;
+      }
+      .logo{
+        background: url("../img/logo-white50.png") center no-repeat ;
       }
       .navbar-brand,.navbar-nav > li > a{
         color: $white-color;

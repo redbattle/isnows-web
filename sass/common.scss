@@ -37,3 +37,15 @@
 @import 'parts/core';
 @import 'parts/ripples';
 
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
