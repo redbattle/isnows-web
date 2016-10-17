@@ -25,7 +25,7 @@
       var target = this.hash;
       console.log($(target).offset().top);
       $root.stop().animate({
-          'scrollTop': ($(target).offset().top - 90)
+          'scrollTop': ($(target).offset().top - 96)
       }, scrollAnimationTime, scrollAnimationFunc, function () {
           window.location.hash = target;
       });
