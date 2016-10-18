@@ -2,6 +2,13 @@
     min-height: 300px;
     background-position: center center;
     background-size: cover;
+    .brand{
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .bgl-grey-100{
+        background-color: $grey-100;
+    }
 }
 .main{
     background: #FFFFFF;
@@ -76,7 +83,6 @@ h2.title{
 }
 .nav-align-center{
     text-align: center;
-
     .nav-pills{
         display: inline-block;
     }
@@ -91,141 +97,42 @@ h2.title{
 .index-page{
     .wrapper > .header{
         height: 90vh;
-    }
-    .brand{
-        margin-top: 30vh;
-        color: #FFFFFF;
-        text-align: center;
-
-        h1{
-            font-size: 4.8em;
-            font-weight: 600;
-        }
-        h3{
-            font-size: 1.5em;
-            text-transform: uppercase;
-            max-width: 400px;
-            margin: 10px auto 0;
+        .brand{
+            margin-top: 30vh;
         }
     }
     .section-basic{
         padding-top: 15px;
     }
-    .bgl-grey-100{
-        background-color: $grey-100;
-    }
-
-    //.header-filter:after{
-    //    background: rgba(101, 47, 142, 0.64);
-    //    background: linear-gradient(45deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
-    //    background: -moz-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
-    //    background: -webkit-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
-    //
-    //}
-    //.header-filter:after{
-    //    background: rgba(146,182,213, 0.08);
-    //    background: linear-gradient(45deg,  rgba(146,182,213, 0.88) 0%, rgba(181, 206, 229, 0.06) 100%);
-    //    background: -moz-linear-gradient(135deg,  rgba(146,182,213, 0.88) 0%, rgba(181, 206, 229, 0.6) 100%);
-    //    background: -webkit-linear-gradient(135deg,  rgba(146,182,213, 0.88) 0%, rgba(181, 206, 229, 0.6) 100%);
-    //
-    //}
 }
 
 // style for the landing page
-.landing-page{
-
-    .header{
-        height: 100vh;
-
-        .container{
-            padding-top: 26vh;
-            color: #FFFFFF;
-        }
-
-        .share{
-            margin-top: 150px;
-        }
-        h1{
-            font-weight: 600;
-        }
-        .title{
-            color: $white-color;
-        }
-    }
-
-    .wrapper{
-        background: #CCCCCC;
-    }
-}
-
-// style for the profile page
-
-.profile-page{
-    .header{
+.list-page{
+    .wrapper > .header{
         height: 380px;
         background-position: top center;
-    }
-    .profile{
-        text-align: center;
-
-        img{
-            max-width: 160px;
-            margin: -80px auto 0;
-        }
-    }
-    .description{
-        margin: $margin-base * 2 auto 0;
-        max-width: 600px;
-    }
-    .profile-tabs{
-        margin-top: $margin-base * 4;
-    }
-    .gallery{
-        margin-top: $margin-base * 3;
-        padding-bottom: 50px;
-
-        img{
-            width: 100%;
-            margin-bottom: $margin-base * 2;
+        .brand{
+            margin-top: 160px;
         }
     }
 }
 
-.signup-page{
-    .wrapper{
-        > .header{
-            min-height: 100vh;
-        }
-        .card-signup{
-            margin: 160px 0 40px;
-        }
-    }
-    .footer{
-        .copyright,
-        a{
-            color: #FFFFFF;
+// style for the landing page
+.info-page{
+    .wrapper > .header{
+        height: 380px;
+        background-position: top center;
+        .brand{
+            margin-top: 80px;
         }
     }
 }
-.landing-page,
-.profile-page,
-.signup-page,
-.index-page{
-    .navbar-transparent{
+// style for the profile page
+
+.navbar-transparent{
         padding-top: 25px;
-    }
 }
 
-@media (max-width: 991px){
-    .landing-page .header{
-        height: auto;
-        min-height: 100vh;
-
-        .container{
-            padding-bottom: 70px
-        }
-    }
-}
 @media (max-width: 768px){
     .footer{
         .copyright{
