@@ -15,6 +15,7 @@
     color: $nav-text-color;
     padding: 12px 15px;
     font-size: 20px;
+    border-radius: $border-radius-base;
     &:hover,
     &:focus {
       color: $nav-text-color;
