@@ -60,3 +60,14 @@
 .text-p{
     text-indent: 2em;
 }
+.list-group-item > a{
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px){
+    .list-group-item > a{
+        width: 100%;
+    }
+}
