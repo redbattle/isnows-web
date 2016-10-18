@@ -40,6 +40,9 @@
     }
     >a{
       width: 86%;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      vertical-align: middle;
       display: inline-block;
     }
   }
@@ -62,12 +65,10 @@
   padding: 14px;
   border-radius: 4px;
   margin-bottom: 30px;
-  background: #ffffff;
 }
 .media-card .media-card-text {
   font-size: 13px;
 }
-
 
 @media (max-width: 768px){
   .pic-text-left {
