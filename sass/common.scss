@@ -49,3 +49,18 @@
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
+.a-more{
+    width: auto !important;
+    margin: 0;
+    position: absolute;
+    top: -3px;
+    right: 2px;
+}
+.text-p{
+    text-indent: 2em;
+}
+.list-group-item > a{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
