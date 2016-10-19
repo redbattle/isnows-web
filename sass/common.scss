@@ -51,23 +51,16 @@
 }
 .a-more{
     width: auto !important;
-    float: right;
     margin: 0;
-    display: inline-block;
-    position: relative;
+    position: absolute;
     top: -3px;
+    right: 2px;
 }
 .text-p{
     text-indent: 2em;
 }
 .list-group-item > a{
-    width: 90%;
+    width: 100%;
     display: inline-block;
     vertical-align: middle;
-}
-
-@media (max-width: 768px){
-    .list-group-item > a{
-        width: 100%;
-    }
 }
