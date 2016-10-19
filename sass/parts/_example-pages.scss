@@ -21,10 +21,16 @@
     border-radius: $border-radius-base * 2;
     @include shadow-16dp();
 }
-
-.title{
+.title,
+.title-center{
     font-weight: $font-weight-bold;
     color: $black-color;
+}
+.title-center{
+    h3,
+    h4{
+        text-align: center;
+    }
 }
 .word{
     color: $black-color;
