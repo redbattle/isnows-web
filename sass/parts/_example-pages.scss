@@ -38,6 +38,9 @@
 h2.title{
     margin-bottom: $margin-base * 2;
 }
+.well label{
+    margin-bottom: 0;
+}
 .description{
     color: $gray-light;
 }
@@ -159,5 +162,8 @@ h2.title{
     .main-raised{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .well label{
+        margin-bottom: 5px;
     }
 }
