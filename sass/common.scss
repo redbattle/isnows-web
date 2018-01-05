@@ -1,0 +1,66 @@
+/*! =========================================================
+ *
+ * Material Kit Free - V1.1.0
+ *
+ * =========================================================
+ *
+ *
+ *                       _oo0oo_
+ *                      o8888888o
+ *                      88" . "88
+ *                      (| -_- |)
+ *                      0\  =  /0
+ *                    ___/`---'\___
+ *                  .' \\|     |// '.
+ *                 / \\|||  :  |||// \
+ *                / _||||| -:- |||||- \
+ *               |   | \\\  -  /// |   |
+ *               | \_|  ''\---/''  |_/ |
+ *               \  .-\__  '-'  ___/-. /
+ *             ___'. .'  /--.--\  `. .'___
+ *          ."" '<  `.___\_<|>_/___.' >' "".
+ *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *         \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *     =====`-.____`.___ \_____/___.-`___.-'=====
+ *                       `=---='
+ *
+ *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *               Buddha Bless:  "No Bugs"
+ *
+ * ========================================================= */
+
+@import 'parts/variables';
+@import 'parts/mixins';
+@import 'parts/shadows';
+
+@import 'parts/core';
+@import 'parts/ripples';
+
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.a-more{
+    width: auto !important;
+    margin: 0;
+    position: absolute;
+    top: -3px;
+    right: 2px;
+}
+.text-p{
+    text-indent: 2em;
+}
+.list-group-item > a{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}

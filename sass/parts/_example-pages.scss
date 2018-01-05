@@ -1,0 +1,169 @@
+.wrapper > .header{
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover;
+    .brand{
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+.main{
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3;
+    .bgl-grey-100{
+        background-color: $grey-100;
+    }
+}
+.main-raised{
+    margin: -60px 30px 0px;
+    padding: 20px 0;
+    border-radius: $border-radius-base * 2;
+    @include shadow-16dp();
+}
+.title,
+.title-center{
+    font-weight: $font-weight-bold;
+    color: $black-color;
+}
+.title-center{
+    h3,
+    h4{
+        text-align: center;
+    }
+}
+.word{
+    color: $black-color;
+}
+h2.title{
+    margin-bottom: $margin-base * 2;
+}
+.well label{
+    margin-bottom: 0;
+}
+.description{
+    color: $gray-light;
+}
+
+// general style for example pages
+.header-filter{
+    position: relative;
+
+    &:after{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        left: 0;
+        top: 0;
+        content: "";
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .container{
+        z-index: 2;
+        position: relative;
+    }
+}
+.gallery{
+    .image{
+        img{
+            width: 100%;
+        }
+    }
+}
+.features{
+    padding: 80px 0 0;
+}
+
+.team{
+    margin-top: 80px;
+
+    .team-player{
+        .title{
+            margin: $margin-base * 2 auto;
+        }
+        img{
+            max-width: 170px;
+        }
+    }
+}
+.nav-align-center{
+    text-align: center;
+    .nav-pills{
+        display: inline-block;
+    }
+}
+.navbar-absolute{
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1031;
+}
+
+.index-page{
+    .wrapper > .header{
+        height: 94vh;
+        .brand{
+            margin-top: 30vh;
+        }
+    }
+    .section-basic{
+        padding-top: 15px;
+    }
+}
+
+// style for the landing page
+.list-page{
+    .wrapper > .header{
+        height: 380px;
+        background-position: top center;
+        .brand{
+            margin-top: 160px;
+        }
+    }
+}
+
+// style for the landing page
+.info-page{
+    .wrapper > .header{
+        height: 380px;
+        background-position: top center;
+        .brand{
+            margin-top: 80px;
+        }
+    }
+}
+// style for the profile page
+
+.navbar-transparent{
+        padding-top: 25px;
+}
+
+@media (max-width: 768px){
+    .footer{
+        .copyright{
+            display: inline-block;
+            text-align: center;
+            padding: 10px 0;
+            float: none !important;
+            width: 100%;
+
+        }
+    }
+
+    .navbar.navbar-transparent{
+        background-color: rgba(0,0,0,.4);
+        padding-top: 10px;
+        border-radius: 0;
+    }
+
+    .main-raised{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .well label{
+        margin-bottom: 5px;
+    }
+}
